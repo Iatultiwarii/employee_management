@@ -1,0 +1,124 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Profile Container */
+#profile {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+}
+
+/* Profile Picture */
+#profilePic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007BFF;
+    margin-bottom: 15px;
+}
+
+#profilePicUpload {
+    margin-top: 10px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* Dynamic Fields */
+#qualifications, #experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#qualifications input, #experiences input {
+    width: calc(100% - 20px);
+    margin-bottom: 5px;
+}
+
+#addQualification, #addExperience {
+    background: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#addQualification:hover, #addExperience:hover {
+    background: #218838;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Headings */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #profile {
+        width: 90%;
+        padding: 15px;
+    }
+
+    form input {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}

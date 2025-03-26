@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1a5db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+    gap: 10px;
+}
+#uploadButton {
+    display: inline-block;
+    background: #8cb4df;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+form {
+    transform: scale(1.05); /* Zoom effect */
+    padding: 35px; /* More padding for better spacing */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+}
+input, select {
+    padding: 12px;
+    margin: 10px 0; /* Increased space between fields */
+    font-size: 16px; /* Slightly larger text */
+}
+.form-row {
+    gap: 15px; /* More spacing between fields */
+}
+#customUploadButton {
+    padding: 18px 25px;
+    font-size: 15px;
+    margin-top: 12px;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 70%;
+}
+form>h2{
+    text-align: center;
+}
+
+input, select {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+/* Signup Page Styling */
+#signupForm {
+    position: relative;
+    width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+#signupForm label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Circular Profile Image */
+#profilePicContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profilePreview {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007BFF;
+}
+
+/* Hide Default File Input */
+#uploadButton {
+    display: none;
+}
+
+/* Upload Button Below Image */
+#customUploadButton {
+    margin-top: 8px;
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+#customUploadButton:hover {
+    background: #0056b3;
+}
+
+
+#signupForm input[type="file"] {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+#qualifications, #experiences {
+    display: flex;
+    flex-direction: column;
+}
+
+#qualifications input, #experiences input {
+    width: calc(100% - 20px);
+    margin-bottom: 5px;
+}
+
+#addQualification, #addExperience {
+    background: #28a745;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#addQualification:hover, #addExperience:hover {
+    background: #218838;
+}
+
+/* Enable scrolling for forms that exceed screen height */
+html, body {
+    height: 100%;
+    overflow-y: auto;
+}
+/* Align Full Name & Date of Birth side by side */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-row input {
+    width: 48%; /* Adjusted width for equal spacing */
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+/* Profile picture container */
+#profilePicContainer {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Circular Profile Picture */
+#profilePicContainer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007BFF;
+    cursor: pointer;
+}
+
+/* Hide default file input */
+#uploadButton {
+    display: none;
+}
+
+/* Custom button for uploading */
+#customUploadButton {
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+    transition: background 0.3s ease;
+}
+
+#customUploadButton:hover {
+    background: #0056b3;
+}
