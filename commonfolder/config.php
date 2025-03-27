@@ -22,6 +22,10 @@ class Config
     {
         return $result->fetch_assoc();
     }
+    public function prepare($sql)
+    {
+        return $this->conn->prepare($sql);
+    }
     public function getInsertId() {
         return $this->conn->insert_id;
     }
